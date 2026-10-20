@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <style>
+        table {
+            font-size: 30px;
+        }
+
+        tr {
+            color: rgba(0, 0, 0, 0.1);
+        }
+        td {
+            background-color: darkblue;
+        }
+        h2 {
+            color: #0E4D3BFF;
+            font-size: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <button class="btn btn-primary">Наша кнопка</button>
+
+    <header>
+<!--            <h1>Привет, Мир!</h1>-->
+        <nav class="navbar md:navbar-expand bg-1">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body mb-2 md:mb-0">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+              Menu
+            </button>
+            <div class="menu">
+              <a class="menu-item" href="#">Action</a>
+              <a class="menu-item" href="#">Another action</a>
+              <hr class="menu-divider">
+              <a class="menu-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="hstack gap-2" role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn-solid btn-icon theme-secondary" type="submit">
+            <svg class="bi" width="16" height="16"><use href="#search" /></svg>
+          </button>
+        </form>
+      </div>
+    </dialog>
+  </div>
+</nav>
+
+        <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We’ll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-field">
+    <input type="checkbox" id="exampleCheck1" class="check">
+    <label for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn-solid theme-primary">Submit</button>
+</form>
+
+            <nav>
+                <ol>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#travel">Путешествия</a></li>
+                    <li><a href="#nature">Природа</a></li>
+                    <li><a href="#about">О нас</a></li>
+                </ol>
+
+
+            </nav>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="media/cat.jpg" class="card-img" alt="...">
+    <h5 class="mt-2 mb-0">Наша карточка</h5>
+    <p class="card-text fg-2">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <small class="fg-3">Last updated 3 mins ago</small>
+  </div>
+</div>
+
+
+        <div class="accordion">
+  <details class="accordion-item" name="accordionExample" open>
+    <summary class="accordion-header">
+      Accordion Item #1
+      <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      <strong>This is the first item’s accordion body.</strong> It is shown by default because the <code>open</code> attribute is present. The native <code>&lt;details&gt;</code> element handles all the show/hide logic without any JavaScript. You can put any HTML content within the <code>.accordion-body</code>.
+    </div>
+  </details>
+  <details class="accordion-item" name="accordionExample">
+    <summary class="accordion-header">
+      Accordion Item #2
+      <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      <strong>This is the second item’s accordion body.</strong> The <code>name</code> attribute groups this with other accordion items. When you open this item, any other open item in the same group will close automatically.
+    </div>
+  </details>
+  <details class="accordion-item" name="accordionExample">
+    <summary class="accordion-header">
+      Accordion Item #3
+      <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+    </summary>
+    <div class="accordion-body">
+      <strong>This is the third item’s accordion body.</strong> This exclusive accordion behavior is built into the browser—no Bootstrap JavaScript required. Just use matching <code>name</code> attributes on your <code>&lt;details&gt;</code> elements.
+    </div>
+  </details>
+</div>
+
+        <audio controls>
+            <source src="media/temp.mp3" type="audio/mp3">
+        </audio>
+
+        <video src="media/temp_video.mp4" controls width="400" type="video/mp4"></video>
+        <br>
+        <hr>
+        <br>
+    </header>
+
+    <main>
+        <form action="submit.php" method="post">
+            <label for="name_id">Ваше имя: </label>
+            <input type="text" id="name_id" name="user_name">
+            <br>
+
+            <label for="email_id">Ваш email: </label>
+            <input type="email" id="name_id" name="user_email">
+            <br>
+
+            <label for="message_id">Ваше сообщение: </label>
+            <textarea id="message_id" name="user_message" rows="10"></textarea>
+            <br>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <br>
+        
+        <table>
+            <caption>Топ-3 городов</caption>
+            <tr>
+                <th>Место</th>
+                <th>Город</th>
+                <th>Страна</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Москва</td>
+                <td>Россия</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Сочи</td>
+                <td>Россия</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Тула</td>
+                <td>Россия</td>
+            </tr>
+        </table>
+
+        <p>Lorem <b>ipsum dolor</b> sit <strong>amet, consectetur</strong> adipisicing elit. Alias architecto <i>blanditiis commodi</i>  consectetur <em>dicta ea eligendi </em> enim eos illo inventore laudantium modi mollitia nemo, neque nostrum placeat praesentium recusandae voluptatibus.</p>
+        <article>
+            <img src="media/cat.jpg" alt="Кошка" width="400">
+            <h2 style="color: darkblue; text-align: center">Моё путешествие на Байкал 1</h2>
+            <p>Рассказ о том как съездили на Байкал 1</p>
+            <a href="https://google.com" target="_blank">Google</a>
+
+            <blockquote>
+                Наша цитата
+            </blockquote>
+            <p>Lorem ipsum dolor sit amet,<cite>Пушкин</cite> consectetur adipisicing elit. Asperiores atque, <q>autem blanditiis dolores dolorum eius </q> eos impedit libero nam nobis odio provident quas quia, quidem, repellat repudiandae soluta vel velit!</p>
+        </article>
+        <hr>
+        <article id="travel">
+            <img src="media/germiona.jpg" alt="" height="500">
+            <h2 class="new_color ">Моё путешествие на Байкал 2</h2>
+            <p>Рассказ о том как съездили на Байкал 2</p>
+        </article>
+        <hr>
+        <article>
+            <img src="https://homefood.ua/content/uploads/images/blog/placeholder-cat-gender-1.jpg" alt="" width="400" height="600">
+            <h2>Моё путешествие на Байкал 3</h2>
+            <p>Рассказ о том как съездили на Байкал 3</p>
+        </article>
+
+        <p id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto blanditiis cum deserunt dolorum eaque est eum, ex expedita hic possimus provident, quod sapiente temporibus, voluptate? Doloribus facere obcaecati velit.</p>
+
+    </main>
+
+    <footer>
+            <p>&copy 2026. Это блок о путешествиях</p>
+    </footer>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+

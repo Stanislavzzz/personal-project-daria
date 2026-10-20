@@ -1,0 +1,46 @@
+{% extends 'blog_app/base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ title }}!</h1>
+
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+    <p>Автор: {{ post.author }}</p>
+    <p>Рейтинг: {{ post.rating }}</p>
+    {% if post.rating >= 5 %}
+        <p>Популярный пост</p>
+    {% else %}
+        <p>Новый пост</p>
+    {% endif %}
+
+    <hr>
+
+        <h3>Тэги</h3>
+        <ul>
+            {% for tag in tags %}
+            <li class="badge bg-primary text-white">{{ tag.name }} </li>
+            {% empty %}
+                <p>Тэгов нет нет</p>
+            {% endfor %}
+        </ul>
+
+    <hr>
+
+        <h3>Комментарии</h3>
+        <ul class="list-group">
+            {% for comment in comments %}
+            <li class="list-group-item">
+                <p><strong>{{ comment.author.name }}</strong>></p>
+                <p>{{ comment.text }}</p>
+                <small>Добавлен: {{ comment.created_at }}</small>
+
+            </li>
+            {% empty %}
+                <p>Комментариев нет нет</p>
+            {% endfor %}
+
+        </ul>
+{% endblock %}
+
